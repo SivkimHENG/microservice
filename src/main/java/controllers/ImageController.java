@@ -7,7 +7,6 @@ import com.heng.microservice.models.Image;
 import com.heng.microservice.response.ApiResponse;
 import com.heng.microservice.service.image.IImageService;
 import lombok.AllArgsConstructor;
-import org.apache.coyote.Response;
 import org.springframework.core.io.ByteArrayResource;
 import org.springframework.core.io.Resource;
 import org.springframework.http.HttpHeaders;
@@ -21,6 +20,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 @AllArgsConstructor
+@RestController
 @RequestMapping("${api.prefix}/images")
 public class ImageController {
 
