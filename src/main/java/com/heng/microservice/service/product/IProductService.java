@@ -20,7 +20,7 @@ public interface IProductService {
     List<Product> getProductByBrand(String brand);
     List<Product> getProductsByCategoryAndBrand(String category, String brand);
     List<Product> getProductsByName(String name);
-    List<Product> getProductsByBrandAndName(String category, String name);
+    List<Product> getProductsByBrandAndName(String brandName, String name);
     Long countProductsByBrandAndName(String brand, String name);
 
 
